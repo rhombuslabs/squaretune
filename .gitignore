@@ -1,0 +1,34 @@
+# Android
+.gradle/
+build/
+local.properties
+*.iml
+.idea/workspace.xml
+.idea/libraries/
+.DS_Store
+/captures
+.externalNativeBuild
+.cxx
+app/build/
+
+# Go
+tailscale-core/bin/
+tailscale-core/*.aar
+tailscale-core/*.jar
+vendor/
+
+# OS/IDEs
+.idea/
+*.swp
+*.bak
+
+# Plans
+plan/
+plan/**
+
+# AI / Tooling Artifacts
+.antigravitycli/
+*.artifact.md
+
+# Generated binaries
+app/libs/tailscalecore.aar
