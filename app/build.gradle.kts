@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.rhombuslabs.rotateplayer"
+    namespace = "com.rhombuslabs.squaretune"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.rhombuslabs.rotateplayer"
+        applicationId = "com.rhombuslabs.squaretune"
         minSdk = 31
         targetSdk = 34
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer.sync
+package com.rhombuslabs.squaretune.sync
 
 import android.content.Context
 import android.util.Log

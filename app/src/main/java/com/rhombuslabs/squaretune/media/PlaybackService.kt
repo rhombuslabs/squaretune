@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer.media
+package com.rhombuslabs.squaretune.media
 
 import android.content.Intent
 import androidx.media3.common.AudioAttributes

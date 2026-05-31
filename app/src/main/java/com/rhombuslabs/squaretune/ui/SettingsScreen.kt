@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer.ui
+package com.rhombuslabs.squaretune.ui
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions

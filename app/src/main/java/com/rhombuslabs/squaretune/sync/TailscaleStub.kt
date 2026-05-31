@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer.sync
+package com.rhombuslabs.squaretune.sync
 
 // This stub mocks the generated gomobile bindings for the Tailscale Go library
 object tailscalecore {

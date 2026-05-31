@@ -26,7 +26,7 @@
         </service>
 
         <activity
-            android:name="com.rhombuslabs.rotateplayer.MainActivity"
+            android:name="com.rhombuslabs.squaretune.MainActivity"
             android:exported="true"
             android:theme="@android:style/Theme.Material.NoActionBar">
             <intent-filter>

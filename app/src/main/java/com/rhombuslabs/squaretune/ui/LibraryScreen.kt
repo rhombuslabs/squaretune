@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer.ui
+package com.rhombuslabs.squaretune.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -13,7 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.rhombuslabs.rotateplayer.ui.theme.RotatePlayerTheme
+import com.rhombuslabs.squaretune.ui.theme.squaretuneTheme
 
 @Composable
 fun LibraryScreen() {
@@ -92,7 +92,7 @@ fun AlbumCard(title: String, artist: String) {
 @Preview(widthDp = 720, heightDp = 720)
 @Composable
 fun LibraryScreenPreview() {
-    RotatePlayerTheme {
+    squaretuneTheme {
         LibraryScreen()
     }
 }

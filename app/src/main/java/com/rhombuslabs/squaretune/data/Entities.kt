@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer.data
+package com.rhombuslabs.squaretune.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer.ui.theme
+package com.rhombuslabs.squaretune.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -10,7 +10,7 @@ private val DarkColorScheme = darkColorScheme()
 private val LightColorScheme = lightColorScheme()
 
 @Composable
-fun RotatePlayerTheme(
+fun squaretuneTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {

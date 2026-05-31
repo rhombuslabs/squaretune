@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer.ui
+package com.rhombuslabs.squaretune.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.basicMarquee
@@ -19,7 +19,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.rhombuslabs.rotateplayer.ui.theme.RotatePlayerTheme
+import com.rhombuslabs.squaretune.ui.theme.squaretuneTheme
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -116,7 +116,7 @@ fun NowPlayingScreen() {
 @Preview(widthDp = 720, heightDp = 720)
 @Composable
 fun NowPlayingScreenPreview() {
-    RotatePlayerTheme {
+    squaretuneTheme {
         NowPlayingScreen()
     }
 }

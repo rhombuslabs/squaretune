@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer.ui
+package com.rhombuslabs.squaretune.ui
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable

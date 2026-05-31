@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer
+package com.rhombuslabs.squaretune
 
 //import android.content.Context
 import android.content.Intent
@@ -17,9 +17,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import com.rhombuslabs.rotateplayer.ui.LibraryScreen
-import com.rhombuslabs.rotateplayer.ui.SettingsScreen
-import com.rhombuslabs.rotateplayer.ui.theme.RotatePlayerTheme
+import com.rhombuslabs.squaretune.ui.LibraryScreen
+import com.rhombuslabs.squaretune.ui.SettingsScreen
+import com.rhombuslabs.squaretune.ui.theme.squaretuneTheme
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
     private val folderPickerLauncher = registerForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
         if (uri != null) {
             contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
-            Log.d("RotatePlayer", "Selected folder: $uri")
+            Log.d("squaretune", "Selected folder: $uri")
             // Trigger MediaScanner here...
         }
     }
@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         audioManager = getSystemService(AUDIO_SERVICE) as AudioManager
         setContent {
-            RotatePlayerTheme {
+            squaretuneTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -74,7 +74,7 @@ class MainActivity : ComponentActivity() {
                         }
                         Screen.NOW_PLAYING -> {
                             Box(modifier = Modifier.fillMaxSize()) {
-                                com.rhombuslabs.rotateplayer.ui.NowPlayingScreen()
+                                com.rhombuslabs.squaretune.ui.NowPlayingScreen()
                                 Button(
                                     onClick = { currentScreen = Screen.LIBRARY },
                                     modifier = Modifier.align(Alignment.BottomEnd).padding(16.dp)
@@ -114,27 +114,27 @@ class MainActivity : ComponentActivity() {
                 true
             }
             KeyEvent.KEYCODE_DPAD_LEFT -> {
-                Log.d("RotatePlayer", "Track Skip Previous")
+                Log.d("squaretune", "Track Skip Previous")
                 true
             }
             KeyEvent.KEYCODE_DPAD_RIGHT -> {
-                Log.d("RotatePlayer", "Track Skip Next")
+                Log.d("squaretune", "Track Skip Next")
                 true
             }
             KeyEvent.KEYCODE_BUTTON_L1 -> {
-                Log.d("RotatePlayer", "Previous Track Button")
+                Log.d("squaretune", "Previous Track Button")
                 true
             }
             KeyEvent.KEYCODE_BUTTON_R1 -> {
-                Log.d("RotatePlayer", "Next Track Button")
+                Log.d("squaretune", "Next Track Button")
                 true
             }
             KeyEvent.KEYCODE_BUTTON_A -> {
-                Log.d("RotatePlayer", "Confirm Selection Button")
+                Log.d("squaretune", "Confirm Selection Button")
                 true
             }
             KeyEvent.KEYCODE_BUTTON_X -> {
-                Log.d("RotatePlayer", "Play/Pause Button")
+                Log.d("squaretune", "Play/Pause Button")
                 true
             }
             else -> super.onKeyDown(keyCode, event)

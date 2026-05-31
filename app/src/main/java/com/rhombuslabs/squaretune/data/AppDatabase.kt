@@ -1,4 +1,4 @@
-package com.rhombuslabs.rotateplayer.data
+package com.rhombuslabs.squaretune.data
 
 import android.content.Context
 import androidx.room.Dao

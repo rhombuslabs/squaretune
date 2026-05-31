@@ -1,4 +1,4 @@
-# RotatePlayer
+# squaretune
 
 A dedicated music player for the **Anbernic RG Rotate**, optimized for its unique 720x720 square display.
 

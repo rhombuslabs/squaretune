@@ -1,11 +1,11 @@
-package com.rhombuslabs.rotateplayer.media
+package com.rhombuslabs.squaretune.media
 
 import android.content.Context
 import android.net.Uri
 import android.util.Log
 import androidx.documentfile.provider.DocumentFile
-import com.rhombuslabs.rotateplayer.data.AppDatabase
-import com.rhombuslabs.rotateplayer.data.TrackEntity
+import com.rhombuslabs.squaretune.data.AppDatabase
+import com.rhombuslabs.squaretune.data.TrackEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.jaudiotagger.audio.AudioFileIO
