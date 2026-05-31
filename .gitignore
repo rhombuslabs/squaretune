@@ -26,6 +26,8 @@ vendor/
 plan/
 plan/**
 
+.idx/
+
 # AI / Tooling Artifacts
 .antigravitycli/
 *.artifact.md
